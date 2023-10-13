@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Membuat operasi penjumlahan bilangan menggunakan HTML & Javascript.</title>
+</head>
+<body>
+	<div id="container">
+
+		<h1>Penjumlahan Bilangan</h1><br>
+
+		<label for="textNum1">Bilangan Pertama</label>
+		<input type="text" id="textNum1">
+
+		<label for="textNum2">Bilangan Kedua</label>
+		<input type="text" id="textNum2">
+		<br>
+
+		<button onclick="Jumlahkan()">Jumlahkan</button>
+		<button onclick="reset()">Reset</button>
+
+
+	</div>
+
+	<script>
+
+		function Jumlahkan()
+		{
+            //Ambil nilai dari input
+			var num1 = Number(document.getElementById("textNum1").value);
+			var num2 = Number(document.getElementById("textNum2").value);
+            //Melakukan penjumlahan
+			var sum = num1 + num2;
+			alert(sum);
+		}
+
+		function reset()
+		{
+            //reset nilai input
+			document.getElementById("textNum1").value = "";
+			document.getElementById("textNum2").value = "";
+		}
+
+
+	</script>
+
+
+</body>
+</html>
